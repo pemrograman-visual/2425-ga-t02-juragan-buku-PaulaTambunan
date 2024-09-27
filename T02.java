@@ -1,4 +1,4 @@
-` // 12S24031 - Amelia Renata Lumbanbatu
+  // 12S24031 - Amelia Renata Lumbanbatu
   // 12S24025 - Paula Gevriella Tambunan
 
 import java.util.*;
