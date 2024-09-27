@@ -46,7 +46,7 @@ no
 ```bash
 978-0130895929
 C: A Reference Manual
-Samuel Harbison, Guy Steele Jr. 
+C: A R
 2002
 Pearson
 no
