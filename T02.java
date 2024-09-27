@@ -1,13 +1,10 @@
 ` // 12S24031 - Amelia Renata Lumbanbatu
   // 12S24025 - Paula Gevriella Tambunan
 
- import java.util.*;
-import java.lang.Math;
-
 import java.util.*;
 import java.lang.Math;
 
-public class JavaApplication {
+public class T02 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -20,7 +17,7 @@ public class JavaApplication {
         String penulis;
 
         penulis = input.nextLine();
-        String namaPenerbit;
+        String namaPenerbit;    
 
         namaPenerbit = input.nextLine();
         double tahunTerbit;
@@ -53,7 +50,7 @@ public class JavaApplication {
                     if (rating >= 3.0 && rating <= 4.0) {
                         kategori = "Average";
                     } else {
-                        if (rating >= 0 && rating < 3.0) {
+                        if (rating < 3.0) {
                             kategori = "Low";
                         }
                     }
@@ -63,3 +60,4 @@ public class JavaApplication {
         System.out.println(iSBN + "|" + judulBuku + "|" + penulis + "|" + namaPenerbit + "|" + tahunTerbit + "|" + formatBuku + "|" + hargaPembelian + "|" + minimumMargin + "|" + stok + "|" + rating + "|" + kategori);
     }
 }
+
