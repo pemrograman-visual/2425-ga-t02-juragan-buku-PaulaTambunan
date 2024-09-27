@@ -1,6 +1,8 @@
   // 12S24031 - Amelia Renata Lumbanbatu
   // 12S24025 - Paula Gevriella Tambunan
 
+
+
 import java.util.*;
 import java.lang.Math;
 
@@ -35,20 +37,22 @@ public class T02 {
         int stok;
 
         stok = Integer.parseInt(input.nextLine());
-        Rating = input.nextLine();
-        if (Rating >= 4.7 && Rating <= 5.0) {
+        double rating;
+
+        rating = Double.parseDouble(input.nextLine());
+        if (rating >= 4.7 && rating <= 5.0) {
             kategori = "Best Pick";
         } else {
-            if (Rating >= 4.5 && Rating <= 4.7) {
+            if (rating >= 4.5 && rating <= 4.7) {
                 kategori = "Must Read";
             } else {
-                if (Rating >= 4.0 && Rating <= 4.5) {
+                if (rating >= 4.0 && rating <= 4.5) {
                     kategori = "Recommended";
                 } else {
-                    if (Rating >= 3.0 && Rating <= 4.0) {
+                    if (rating >= 3.0 && rating <= 4.0) {
                         kategori = "Average";
                     } else {
-                        if (Rating >= 0 && Rating < 3.0) {
+                        if (rating >= 0 && rating < 3.0) {
                             kategori = "Low";
                         } else {
                             kategori = "";
@@ -57,6 +61,6 @@ public class T02 {
                 }
             }
         }
-        System.out.println(iSBN + "|" + judulBuku + "|" + penulis + "|" + namaPenerbit + "|" + tahunTerbit + "|" + formatBuku + "|" + hargaPembelian + "|" + minimumMargin + "|" + stok + "|" + Rating + "|" + kategori);
+        System.out.println(iSBN + "|" + judulBuku + "|" + penulis + "|" + namaPenerbit + "|" + tahunTerbit + "|" + formatBuku + "|" + hargaPembelian + "|" + minimumMargin + "|" + stok + "|" + rating + "|" + kategori);
     }
 }
