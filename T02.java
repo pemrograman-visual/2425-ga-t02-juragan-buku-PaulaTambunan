@@ -19,7 +19,7 @@ public class T02 {
         penulis = input.nextLine();
         int tahunTerbit;
 
-        tahunTerbit = input.nextInt();
+        tahunTerbit = Integer.parseInt(input.nextLine());
         String namaPenerbit;
 
         namaPenerbit = input.nextLine();
@@ -28,16 +28,16 @@ public class T02 {
         formatBuku = input.nextLine();
         double hargaPembelian;
 
-        hargaPembelian = input.nextDouble();
+        hargaPembelian = Double.parseDouble(input.nextLine());
         double minimumMargin;
 
-        minimumMargin = input.nextDouble();
+        minimumMargin = Double.parseDouble(input.nextLine());
         int stok;
 
-        stok = input.nextInt();
+        stok = Integer.parseInt(input.nextLine());
         double rating;
 
-        rating = input.nextDouble();
+        rating = Double.parseDouble(input.nextLine());
         if (rating >= 4.7 && rating <= 5.0) {
             kategori = "BestPick";
         } else {
@@ -57,10 +57,6 @@ public class T02 {
                 }
             }
         }
-        System.out.println(iSBN + "|" + judulBuku + "|" + penulis + "|" + namaPenerbit + "|" + tahunTerbit + "|" + formatBuku + "|" + hargaPembelian + "|" + minimumMargin + "|" + stok + "|" + toFixed(rating,1) + "|" + kategori);
-    }
-    
-    private static String toFixed(double value, int digits) {
-        return String.format("%." + digits + "f", value);
+        System.out.println(iSBN + "|" + judulBuku + "|" + penulis + "|" + namaPenerbit + "|" + tahunTerbit + "|" + formatBuku + "|" + hargaPembelian + "|" + minimumMargin + "|" + stok + "|" + rating + "|" + kategori);
     }
 }
