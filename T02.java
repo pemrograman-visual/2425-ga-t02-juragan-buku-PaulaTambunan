@@ -4,7 +4,7 @@
 import java.util.*;
 import java.lang.Math;
 
-public class T02 {
+public class T02{
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -17,12 +17,12 @@ public class T02 {
         String penulis;
 
         penulis = input.nextLine();
-        String namaPenerbit;    
+        int tahunTerbit;
+
+        tahunTerbit = Integer.parseInt(input.nextLine());
+        String namaPenerbit;
 
         namaPenerbit = input.nextLine();
-        double tahunTerbit;
-
-        tahunTerbit = Double.parseDouble(input.nextLine());
         String formatBuku;
 
         formatBuku = input.nextLine();
@@ -32,9 +32,9 @@ public class T02 {
         double minimumMargin;
 
         minimumMargin = Double.parseDouble(input.nextLine());
-        double stok;
+        int stok;
 
-        stok = Double.parseDouble(input.nextLine());
+        stok = Integer.parseInt(input.nextLine());
         double rating;
 
         rating = Double.parseDouble(input.nextLine());
@@ -50,14 +50,17 @@ public class T02 {
                     if (rating >= 3.0 && rating <= 4.0) {
                         kategori = "Average";
                     } else {
-                        if (rating < 3.0) {
+                        if (rating >= 0 && rating < 3.0) {
                             kategori = "Low";
                         }
                     }
                 }
             }
         }
-        System.out.println(iSBN + "|" + judulBuku + "|" + penulis + "|" + namaPenerbit + "|" + tahunTerbit + "|" + formatBuku + "|" + hargaPembelian + "|" + minimumMargin + "|" + stok + "|" + rating + "|" + kategori);
+        System.out.println(iSBN + "|" + judulBuku + "|" + penulis + "|" + namaPenerbit + "|" + tahunTerbit + "|" + formatBuku + "|" + hargaPembelian + "|" + minimumMargin + "|" + stok + "|" + toFixed(rating,1) + "|" + kategori);
+    }
+    
+    private static String toFixed(double value, int digits) {
+        return String.format("%." + digits + "f", value);
     }
 }
-
