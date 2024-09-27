@@ -1,5 +1,5 @@
-// 12S24031 - Amelia Renata Lumbanbatu
-// 12S24025 - Paula Gevriella Tambunan
+` // 12S24031 - Amelia Renata Lumbanbatu
+  // 12S24025 - Paula Gevriella Tambunan
 
 import java.util.*;
 import java.lang.Math;
@@ -22,22 +22,22 @@ public class T02 {
         namaPenerbit = input.nextLine();
         double tahunTerbit;
 
-        tahunTerbit = input.nextDouble();
+        tahunTerbit = Double.parseDouble(input.nextLine());
         String formatBuku;
 
         formatBuku = input.nextLine();
         int hargaPembelian;
 
-        hargaPembelian = input.nextInt();
+        hargaPembelian = Integer.parseInt(input.nextLine());
         int minimumMargin;
 
-        minimumMargin = input.nextInt();
+        minimumMargin = Integer.parseInt(input.nextLine());
         double stok;
 
-        stok = input.nextDouble();
+        stok = Double.parseDouble(input.nextLine());
         double rating;
 
-        rating = input.nextDouble();
+        rating = Double.parseDouble(input.nextLine());
         if (rating >= 4.7 && rating <= 5.0) {
             kategori = "BestPick";
         } else {
@@ -60,4 +60,3 @@ public class T02 {
         System.out.println(iSBN + "|" + judulBuku + "|" + penulis + "|" + namaPenerbit + "|" + tahunTerbit + "|" + formatBuku + "|" + hargaPembelian + "|" + minimumMargin + "|" + stok + "|" + rating + "|" + kategori);
     }
 }
-
