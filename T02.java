@@ -17,7 +17,7 @@ public class T02 {
         penulis = input.nextLine();
         tahunTerbit = Integer.parseInt(input.nextLine());
         penerbit = input.nextLine();
-        formatBukuElektranik = input.nextLine();
+        FormatBukuElektranika = input.nextLine();
         hargaPembelian = Double.parseDouble(input.nextLine());
         minimumMargin = Double.parseDouble(input.nextLine());
         stok = Integer.parseInt(input.nextLine());
